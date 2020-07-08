@@ -1,0 +1,28 @@
+.slide-size() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  height: auto;
+  font-size: calc((@font-size * 1.5) + 0.5vw);
+  color: @font-color;
+  font-weight: 500;
+}
+
+.slide-gradient(@color: #075d7c) {
+  background: @color;
+}
+
+.center-vertically(@position: absolute) {
+	position: @position;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.transform(@transform) {
+	-ms-transform: @transform;
+	-webkit-transform: @transform;
+	transform: @transform;
+}
